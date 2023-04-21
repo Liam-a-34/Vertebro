@@ -336,6 +336,83 @@ main {
     background-size: cover;
     background-position: -10%;
     margin-bottom: 100px;
+    position: relative;
+}
+
+.life-back-image h3{
+    font-size: 50px;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    filter: brightness(1);
+}
+
+.life-back-image p{
+    font-size: 25px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.life-back-image a{
+    width: 275px;
+    height: 55px;
+    font-size: 35px;
+    color: white;
+    padding: 0 25px;
+    font-family: "Open Sans", sans-serif;
+    background-color: #426449;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.life-back-image a div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.life-back-image img{
+    width: 40px;
+    height: 40px;
+    filter: invert(1);
+    margin-top: 7px;
+}
+
+.life-back-image h6{
+    font-size: 30px;
+    margin-top: 3px
+}
+
+.life-back-image a:hover{
+    cursor: pointer;
+    background-color: rgb(44, 44, 44);
+}
+
+.service-images-cont{
+    width: 70%;
+}
+
+.service-image1{
+    width: 700px;
+    height: 200px;
+    background-image: url("../images/back-pain-6949392.jpg");
+    background-size: cover;
 }
 
 .googlemap {
