@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-header{
+header {
     position: absolute;
     top: 0;
     height: 100px;
@@ -11,25 +11,24 @@ header{
     background-color: #426449;
 }
 
-header h2{
+header h2 {
     font-size: 50px;
     font-family: "Montserrat", sans-serif;
     font-style: italic;
     color: #ffffff
 }
 
-header ul{
+header ul {
     display: flex;
     justify-content: space-evenly;
 }
-
 
 li {
     list-style: none;
     font-family: "Montserrat", sans-serif;
 }
 
-.header-info{
+.header-info {
     width: 90vw;
     margin: auto;
     display: flex;
@@ -38,18 +37,18 @@ li {
     margin-top: 25px;
 }
 
-.header-info h2{
+.header-info h2 {
     width: 300px;
 }
 
-.left-header-info{
+.left-header-info {
     width: 800px;
     font-size: 25px;
     position: relative;
     top: 30px;
 }
 
-.right-header-info{
+.right-header-info {
     width: 300px;
     display: flex;
     justify-content: space-between;
@@ -57,15 +56,77 @@ li {
 
 }
 
-.right-header-info p{
+.right-header-info p {
     font-size: 22px;
     position: relative;
     bottom: 7px;
 }
 
-.right-header-info ul li img{
+.right-header-info ul li img {
     width: 35px;
     height: 35px;
     filter: brightness(0) invert(1);
     margin: 0 2px
+}
+
+.googlemap {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li {
+    width: 150px;
+    padding: 10px;
+}
+
+.dropdown:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+}
+
+.sub-menu li {
+    width: 150px;
+    padding: 10px;
+}
+
+.dropdown:hover .sub-menu {
+    display: block;
+    top: 0;
+    left: 100%;
+    margin-left: 10px;
+}
+
+#testimonies{
+    margin-top: 100px;
+}
+
+#contact {
+    margin-top: 100px;
+}
+
+.main{
+    margin-top: 100px;
 }

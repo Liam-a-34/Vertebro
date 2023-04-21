@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <title> Vertebros </title>
 </head>
 
@@ -16,14 +16,14 @@
 
     <header>
         <div class="header-info">
-            <h2><a href="./index.html">Vertebros</a></h2>
+            <h2><a href="../../index.html">Vertebros</a></h2>
             <div>
                 <nav class="left-header-info">
                     <ul>
-                        <li><a href="./assets/pages/about.html">About</a></li>
+                        <li><a href="/assets/pages/about.html">About</a></li>
                         <li>
                             <div class="dropdown">
-                                <a href="./assets/pages/services.html">Services</a>
+                                <a href="/assets/pages/services.html">Services</a>
                                 <div class="dropdown-content">
                                     <ul>
                                         <li>
@@ -44,25 +44,46 @@
                                 </div>
                             </div>
                         </li>
-                        <li><a href="./assets/pages/testimonies.html">Testimonies</a></li>
-                        <li><a href="./assets/pages/location.html">Location</a></li>
-                        <li><a href="./assets/pages/contact.html">Contact</a></li>
+                        <li><a href="/assets/pages/testimonies.html">Testimonies</a></li>
+                        <li><a href="/assets/pages/location.html">Location</a></li>
+                        <li><a href="/assets/pages/contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="right-header-info">
                 <p>615-555-5555</p>
                 <ul>
-                    <li><a><img src="./assets/images/med-cross-icon.png" /></a></li>
-                    <li><a><img src="./assets/images/med-cross-icon.png" /></a></li>
-                    <li><a><img src="./assets/images/med-cross-icon.png" /></a></li>
-                    <li><a><img src="./assets/images/med-cross-icon.png" /></a></li>
+                    <li><a><img src="/assets/images/med-cross-icon.png" /></a></li>
+                    <li><a><img src="/assets/images/med-cross-icon.png" /></a></li>
+                    <li><a><img src="/assets/images/med-cross-icon.png" /></a></li>
+                    <li><a><img src="/assets/images/med-cross-icon.png" /></a></li>
                 </ul>
             </div>
         </div>
     </header>
 
     <main>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" required>
+        
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+        
+                <label for="help">How Can We Help?</label>
+                <textarea id="help" name="help" rows="4" required></textarea>
+        
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        
 
     </main>
 
