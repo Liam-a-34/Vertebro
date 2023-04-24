@@ -26,6 +26,7 @@
 - FAQ page with answers to commonly asked questions about chiropractic care
 ## Contributors
 - Liam Allen (Github: Liam-a-34)
+- Joon Kim (Github: devkjoon)
 - Trenton Kirchner (Github: kirchnerdev22)
 - Alexandria White (Github: alexandriawhite)
 ## Preview
