@@ -589,14 +589,15 @@ main {
 }
 
 .googlemap {
-    margin: 100px auto;
+    margin: 100px auto 0 auto;
     width: 100%;
-    height: 400px;
+    height: 500px;
     position: relative;
 }
 
 .googlemap iframe{
     width: 100%;
+    height: 100%;
 }
 
 .location-box{
@@ -635,6 +636,83 @@ main {
     margin-left: 35px;
     margin-top:15px;
     font-weight: lighter;
+}
+
+.landing-contact-button{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(0, 153, 84);
+    position: relative;
+}
+
+.landing-contact-button a:hover{
+    cursor: pointer;
+    background-color: rgb(241, 241, 241);
+}
+
+.landing-contact-button a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 65px;
+    background-color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(0, 136, 75)
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+footer div{
+    text-align: center;
+    width: 100%;
+    height: max-content;
+    margin-top: 20px;
+    font-family: "Open Sans", sans-serif;
+    color:rgb(70, 70, 70);
+    font-weight: lighter;
+}
+
+footer img{
+    height: 25px;
+    width: 25px;
+    position: relative;
+    top: 5px;
+}
+
+footer h5{
+    position: relative;
+    top: 15px;
+}
+
+footer h5::before{
+    content: "";
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    top: -40%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-bottom: 1px solid grey
+}
+
+footer p {
+    width: 100%;
+    background-color: white;
+    height: 50px;
+    padding-top: 15px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    margin-top: 35px
 }
 
 .dropdown {
