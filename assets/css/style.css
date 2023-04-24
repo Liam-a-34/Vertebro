@@ -9,7 +9,7 @@ header {
     top: 0;
     height: 100px;
     width: 100%;
-    background-color: #426449;
+    background-color: rgba(0,153,84,0.77);
 }
 
 header h2 {
@@ -134,7 +134,7 @@ main {
 
 .about-cont{
     padding: 25px 0;
-    background-color: #426449;
+    background-color: rgba(0,153,84,0.77);
     background-color: #ebebeb;
     height: fit-content;
 }
@@ -194,7 +194,7 @@ main {
 .about-header-text h3{
     font-size: 35px;
     font-family: "Montserrat", sans-serif;
-    color: #426449;
+    color: rgba(0,153,84,0.77);
 }
 
 .about-header-text p{
@@ -215,7 +215,7 @@ main {
 .why-chiro h3{
     font-size: 35px;
     font-family: "Montserrat", sans-serif;
-    color: #426449
+    color: rgba(0,153,84,0.77)
 }
 
 .why-chiro h5{
@@ -235,7 +235,7 @@ main {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 150px;
-    border-bottom: 2px solid #426449;
+    border-bottom: 2px solid rgba(0,153,84,0.77);
 }
 
 .questions1{
@@ -303,7 +303,7 @@ main {
     padding: 25px;
     margin: 15px 15px;
     background-color: white;
-    border-bottom: 5px solid #426449;
+    border-bottom: 5px solid rgba(0,153,84,0.77);
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -o-transition: all .3s ease;
@@ -319,7 +319,7 @@ main {
 .benefits-card h6{
     font-size: 25px;
     font-family: "Montserrat", sans-serif;
-    color:#426449
+    color:rgba(0,153,84,0.77)
 }
 
 .benefits-card p{
@@ -369,7 +369,7 @@ main {
     color: white;
     padding: 0 25px;
     font-family: "Open Sans", sans-serif;
-    background-color: #426449;
+    background-color: rgba(0,153,84,0.77);
     position: absolute;
     left: 50%;
     top: 65%;
