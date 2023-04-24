@@ -589,10 +589,52 @@ main {
 }
 
 .googlemap {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 100px auto;
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.googlemap iframe{
+    width: 100%;
+}
+
+.location-box{
+    width: 450px;
+    height: 425px;
+    background-color: rgb(0, 153, 84);
+    position: absolute;
+    top: 0;
+    left: 17%;
+    color: white;
+    border-bottom: 8px solid rgb(0, 122, 67);
+}
+
+.location-box h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 45px;
+    margin: 35px 0 80px 35px
+}
+
+.location-box h5{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    margin: 25px 0 0 35px
+}
+
+.location-box p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    margin-left: 35px;
+    margin-top: 5px;
+}
+
+.location-box h6{
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    margin-left: 35px;
+    margin-top:15px;
+    font-weight: lighter;
 }
 
 .dropdown {
