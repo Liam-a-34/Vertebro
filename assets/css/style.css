@@ -56,6 +56,7 @@ main {
 .header-info-div{
     width: 800px;
     height: 100px;
+    padding-left: 20px;
 }
 
 .left-header-info {
@@ -63,7 +64,7 @@ main {
     font-size: 25px;
     position: relative;
     top: 30px;
-    border-top: 1px solid grey;
+    border-top: 2px solid white;
     padding-top: 7px;
 }
 
@@ -349,6 +350,7 @@ main {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     filter: brightness(1);
+    padding-bottom: 15px;
 }
 
 .life-back-image p{
@@ -360,6 +362,7 @@ main {
     top: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    padding-top: 15px;
 }
 
 .life-back-image a{
