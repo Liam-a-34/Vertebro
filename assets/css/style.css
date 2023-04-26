@@ -14,6 +14,7 @@ header {
     height: 100px;
     width: 100%;
     background-color: rgba(0,153,84,0.77);
+    z-index: 100;
 }
 
 header h2 {
@@ -49,6 +50,8 @@ main {
     justify-content: space-between;
     color: #ffffff;
     margin-top: 20px;
+    position: relative;
+    z-index: 50;
 }
 
 .header-info h2 {
@@ -57,9 +60,16 @@ main {
     top: 10px;
 }
 
+.header-info ul li {
+    position: relative;
+    z-index: 1;
+}
+
 .header-info-div{
     width: 800px;
     height: 100px;
+    position: relative;
+    z-index: 40;
 }
 
 .left-header-info {
@@ -69,6 +79,12 @@ main {
     top: 30px;
     border-top: 2px solid white;
     padding-top: 7px;
+    z-index: 30;
+}
+
+.left-header-info ul{
+    position: relative;
+    z-index: 20px;
 }
 
 .right-header-info {
@@ -102,7 +118,7 @@ main {
     background-size: cover;
     background-position: -10%;
     position: relative;
-    z-index: -1;
+    z-index: -3;
 }
 
 .opening-image-text-div{
@@ -712,51 +728,119 @@ footer p {
     padding-top: 15px;
     font-family: "Open Sans", sans-serif;
     font-size: 12px;
-    margin-top: 35px
+    margin-top: 35px;
+}
+
+.services-toggle{
+    padding: 15px 0;
 }
 
 .dropdown {
     position: relative;
+
+}
+
+.services-toggle{
+    position: relative;
+    z-index: 1;
 }
 
 .dropdown-content {
     position: absolute;
     top: 100%;
     left: 0;
-    display: none;
+    /* display: none; */
+    z-index: -1;
+
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+.sub-menu{
+    position: relative;
+    right: 70px;
+    top: 11px;
+    width: 250px;
+    height: 416px;
+    overflow-y: hidden;
 }
 
-.dropdown-content li {
-    width: 150px;
-    padding: 10px;
-}
-
-.dropdown:hover .sub-menu {
-    display: block;
-}
-
-.sub-menu {
+.sub-menu-ul{
     position: absolute;
     top: 0;
-    left: 100%;
+    left: 0;
     display: none;
+    flex-direction: column;
+    margin-top: 0px;
+    height: max-content
 }
+
 
 .sub-menu li {
-    width: 150px;
+    width: 250px;
     padding: 10px;
+    background-color: rgb(44, 44, 44);
+    border-bottom: 1px solid white;
+    text-align: center;
 }
 
-.dropdown:hover .sub-menu {
-    display: block;
-    top: 0;
-    left: 100%;
-    margin-left: 10px;
+.sub-menu li:hover{
+    cursor: pointer;
+    background-color: rgb(63, 63, 63);
 }
+
+
+.sub-menu ul li:last-child{
+    border-bottom: none;
+}
+
+.services-toggle:hover ~ .dropdown .sub-menu-ul{
+    display: flex;
+    flex-direction: column;
+    animation-name: drop-slide;
+    animation-duration: .75s;
+    animation-direction: alternate;
+}
+
+.sub-menu-ul:hover{
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes drop-slide{
+    0%{
+        margin-top: -450px
+    }
+    100%{
+
+        margin-top: 0;
+    }
+}
+
+.drop-menu-item{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.drop-menu-item ul{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 0;
+    height: 0;
+    position: relative;
+    left: 200px;
+}
+
+.drop-menu-item:hover ul li{
+    height: auto;
+    width: 250px;
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    font-size: 25px;
+}
+
 
 #testimonies{
     margin-top: 100px;
