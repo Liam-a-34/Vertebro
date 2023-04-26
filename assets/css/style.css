@@ -756,10 +756,10 @@ footer p {
 
 .sub-menu{
     position: relative;
-    right: 70px;
+    right: 83px;
     top: 11px;
-    width: 250px;
-    height: 416px;
+    width: 275px;
+    height: 456px;
     overflow-y: hidden;
 }
 
@@ -767,19 +767,23 @@ footer p {
     position: absolute;
     top: 0;
     left: 0;
-    display: none;
+    display: flex;
     flex-direction: column;
-    margin-top: 0px;
-    height: max-content
+    margin-top: -460px;
+    height: max-content;
+    -webkit-transition: all .75s ease;
+    -moz-transition: all .75s ease;
+    -o-transition: all .75s ease;
+    transition: all .75s ease;
 }
 
 
 .sub-menu li {
-    width: 250px;
-    padding: 10px;
+    width: 275px;
+    padding: 15px;
     background-color: rgb(44, 44, 44);
     border-bottom: 1px solid white;
-    text-align: center;
+    text-align: center ;
 }
 
 .sub-menu li:hover{
@@ -793,11 +797,11 @@ footer p {
 }
 
 .services-toggle:hover ~ .dropdown .sub-menu-ul{
-    display: flex;
-    flex-direction: column;
-    animation-name: drop-slide;
-    animation-duration: .75s;
-    animation-direction: alternate;
+    margin-top: 0;
+}
+
+.sub-menu-ul:hover{
+    margin-top: 0;
 }
 
 .sub-menu-ul:hover{
@@ -805,15 +809,6 @@ footer p {
     flex-direction: column;
 }
 
-@keyframes drop-slide{
-    0%{
-        margin-top: -450px
-    }
-    100%{
-
-        margin-top: 0;
-    }
-}
 
 .drop-menu-item{
     width: 250px;
