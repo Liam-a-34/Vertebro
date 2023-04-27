@@ -704,7 +704,7 @@ main {
 
 .landing-contact-button a:hover{
     cursor: pointer;
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(230, 230, 230);
 }
 
 .landing-contact-button a{
@@ -717,10 +717,11 @@ main {
     height: 65px;
     background-color: white;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 15px;
     font-size: 30px;
     font-family: "Open Sans", sans-serif;
-    color: rgb(0, 136, 75)
+    color: rgb(0, 136, 75);
+    text-decoration: none;
 }
 
 footer{
@@ -977,11 +978,28 @@ footer p {
     font-family: "Open Sans", sans-serif;
     color: rgb(95, 95, 95);
     text-align: center;
+    width: 50%;
+    margin: 0 auto 40px auto;
+    position: relative;
+    padding-bottom: 25px;
+}
+
+.services-text-info p::before{
+    content: "";
+    width: 300px;
+    border-bottom: 2px solid rgb(0, 153, 84);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .large-services-cont{
     display: flex;
     flex-direction: column;
+    height: 100%;
+    margin-bottom: 50px;
 }
 
 .large-service-div{
@@ -991,6 +1009,10 @@ footer p {
     flex-direction: column;
     overflow: hidden;
     position: relative;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
 }
 
 .large-service-bg{
@@ -1090,9 +1112,9 @@ footer p {
 
 .large-service-text{
     overflow: hidden;
-    padding: 20px;
+    padding: 0px;
     position: relative;
-    bottom: 1100px;
+    /* bottom: 1100px; */
     max-height: 0;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -1100,6 +1122,7 @@ footer p {
     transition: all 1s ease;
     z-index: -1;
     background-color: rgb(230, 230, 230);
+    padding: 0 40px 0px 40px
 }
 
 .large-service-text h3{
@@ -1113,11 +1136,39 @@ footer p {
     font-size: 22px;
     font-family: "Open sans", sans-serif;
     margin-top: 15px;
+    position: relative;
+    padding-bottom: 60px;
 }
 
-.service-extend{
-    max-height: 1000px;
+.large-service-text p::before{
+    content: "";
+    width: 95%;
+    border-bottom: 2px solid rgb(219, 219, 219);
+    position: absolute;
     bottom: 0;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.large-service-text p:last-child::before{
+    border:none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+
+.service-extend{
+    max-height: 2500px;
+    /* bottom: 0; */
+}
+
+.service-padding{
+    padding-bottom: 40px;
+}
+
+.service-shadow{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 #testimonies{
