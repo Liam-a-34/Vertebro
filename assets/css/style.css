@@ -1038,6 +1038,26 @@ footer p {
     transition: all 1s ease;
 }
 
+#Chiropractic{
+    scroll-margin-top: 100px !important;
+}
+
+#Injuries{
+    scroll-margin-top: 100px !important;
+}
+
+#Extremities{
+    scroll-margin-top: 100px !important;
+}
+
+#Family{
+    scroll-margin-top: 100px !important;
+}
+
+#Other{
+    scroll-margin-top: 100px !important;
+}
+
 .large-service-bg{
     width: 100%;
     height: 500px;
