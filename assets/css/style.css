@@ -639,6 +639,32 @@ main {
     height: 100%;
 }
 
+.location-page{
+    height: 90vh;
+    margin-top: 0;
+}
+
+.location-page-h2{
+    margin: 50px 0 30px 0;
+    text-align: center;
+    font-size: 60px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(0, 153, 84);
+    position: relative;
+    padding-bottom: 15px
+}
+
+.location-page-h2::before{
+    content: "";
+    width: 100px;
+    border-bottom: 2px solid rgb(0, 153, 84);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
 .location-box{
     width: 450px;
     height: 425px;
@@ -1038,25 +1064,7 @@ footer p {
     transition: all 1s ease;
 }
 
-#Chiropractic{
-    scroll-margin-top: 100px !important;
-}
 
-#Injuries{
-    scroll-margin-top: 100px !important;
-}
-
-#Extremities{
-    scroll-margin-top: 100px !important;
-}
-
-#Family{
-    scroll-margin-top: 100px !important;
-}
-
-#Other{
-    scroll-margin-top: 100px !important;
-}
 
 .large-service-bg{
     width: 100%;
