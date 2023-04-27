@@ -4,9 +4,27 @@
     box-sizing: border-box;
 }
 
+html::-webkit-scrollbar{
+    width: 10px;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent
+}
+
+html::-webkit-scrollbar-thumb{
+    background: rgba(183, 183, 183, 0.497);
+}
+
 body{
     background-color: #ebebeb;
+    overflow-y: overlay;
 }
+
+.main{
+    margin-top: 100px;
+}
+
 
 header {
     position: absolute;
@@ -161,10 +179,12 @@ main {
 
 .about-header{
     width: 1100px;
-    height: 500px;
     background-color: white;
     margin: 25px auto;
+    padding: 0 0 50px 0;
     display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 
@@ -215,6 +235,7 @@ main {
     font-size: 35px;
     font-family: "Montserrat", sans-serif;
     color: rgba(0,153,84,0.77);
+    margin-top: 0px;
 }
 
 .about-header-text p{
@@ -235,7 +256,7 @@ main {
 .why-chiro h3{
     font-size: 35px;
     font-family: "Montserrat", sans-serif;
-    color: rgba(0,153,84,0.77)
+    color: rgba(0, 153, 84, 0.859)
 }
 
 .why-chiro h5{
@@ -255,7 +276,7 @@ main {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 150px;
-    border-bottom: 2px solid rgba(0,153,84,0.77);
+    border-bottom: 2px solid rgba(0, 153, 84, 0.782);
 }
 
 .questions1{
@@ -355,7 +376,6 @@ main {
     background-image: url("../images/babumon-pt-loHC7omTI0I-unsplash.jpg");
     background-size: cover;
     background-position: -10%;
-    margin-bottom: 100px;
     position: relative;
 }
 
@@ -400,6 +420,7 @@ main {
     -moz-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
+    text-decoration: none;
 }
 
 .life-back-image a div{
@@ -417,7 +438,7 @@ main {
 
 .life-back-image h6{
     font-size: 30px;
-    margin-top: 3px
+    margin-top: 6px
 }
 
 .life-back-image a:hover{
@@ -430,6 +451,7 @@ main {
     font-family: "Montserrat", sans-serif;
     color: rgba(0,153,84,0.77);
     text-align: center;
+    margin-top: 100px;
 }
 
 .service-images-header2{
@@ -447,6 +469,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: relative;
 }
 
 .service-image{
@@ -704,7 +727,7 @@ main {
 
 .landing-contact-button a:hover{
     cursor: pointer;
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(230, 230, 230);
 }
 
 .landing-contact-button a{
@@ -720,7 +743,8 @@ main {
     padding-top: 10px;
     font-size: 30px;
     font-family: "Open Sans", sans-serif;
-    color: rgb(0, 136, 75)
+    color: rgb(0, 136, 75);
+    text-decoration: none;
 }
 
 footer{
@@ -977,11 +1001,28 @@ footer p {
     font-family: "Open Sans", sans-serif;
     color: rgb(95, 95, 95);
     text-align: center;
+    width: 50%;
+    margin: 0 auto 40px auto;
+    position: relative;
+    padding-bottom: 25px;
+}
+
+.services-text-info p::before{
+    content: "";
+    width: 300px;
+    border-bottom: 2px solid rgb(0, 153, 84);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .large-services-cont{
     display: flex;
     flex-direction: column;
+    height: 100%;
+    margin-bottom: 50px;
 }
 
 .large-service-div{
@@ -991,6 +1032,10 @@ footer p {
     flex-direction: column;
     overflow: hidden;
     position: relative;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
 }
 
 .large-service-bg{
@@ -1090,9 +1135,9 @@ footer p {
 
 .large-service-text{
     overflow: hidden;
-    padding: 20px;
+    padding: 0px;
     position: relative;
-    bottom: 1100px;
+    /* bottom: 1100px; */
     max-height: 0;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -1100,6 +1145,7 @@ footer p {
     transition: all 1s ease;
     z-index: -1;
     background-color: rgb(230, 230, 230);
+    padding: 0 40px 0px 40px
 }
 
 .large-service-text h3{
@@ -1113,11 +1159,238 @@ footer p {
     font-size: 22px;
     font-family: "Open sans", sans-serif;
     margin-top: 15px;
+    position: relative;
+    padding-bottom: 60px;
 }
 
-.service-extend{
-    max-height: 1000px;
+.large-service-text p::before{
+    content: "";
+    width: 95%;
+    border-bottom: 2px solid rgb(219, 219, 219);
+    position: absolute;
     bottom: 0;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.large-service-text p:last-child::before{
+    border:none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+
+.service-extend{
+    max-height: 2500px;
+    /* bottom: 0; */
+}
+
+.service-padding{
+    padding-bottom: 40px;
+}
+
+.service-shadow{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.aboutH1{
+    text-align: center;
+    position: relative;
+    top: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+}
+
+.about-page-header{
+    top: 50px;
+}
+
+.about-header-cont{
+    display: flex;
+}
+
+.about-header-cont h3{
+    margin-top: 50px;
+}
+
+.about-header-div{
+    margin-top: 0px;
+    padding: 0 40px;
+}
+
+.about-header-div p{
+    margin: 25px 0;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#contact{
+    width: max-content;
+    height: auto;
+    margin: auto;
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 50px 0;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.input-cont{
+    display: flex;
+}
+
+.input-div{
+    background-color: white;
+    border: 1px solid grey;
+}
+
+.textarea-div{
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+#contact h2,
+#contact h5{
+    text-align: center;
+    width: 100%;
+}
+
+#contact h2{
+    font-size: 40px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(0, 153, 84)
+}
+
+#contact h5{
+    font-size: 25px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(86, 86, 86);
+    margin-bottom: 25px;
+}
+
+#contact form img{
+    height: 25px;
+    width: 25px;
+}
+
+.input-div{
+    height: 50px;
+    width: 300px;
+    margin: 10px 5px;
+    padding: 0 5px;
+    border-radius: 5px;
+    padding-right: 0;
+}
+
+.input-div img{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 6px;
+    filter: invert(1) brightness(.4);
+    margin-right: 10px;
+    margin-left: 5px
+}
+
+.input-div input{
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 84%;
+    padding-left: 5px;
+    font-size: 18px;
+}
+
+.input-div input:active .input-div{
+    border: 1px solid rgb(0, 153, 84)
+}
+
+.textarea-div{
+    width: 100%;
+    position: relative;
+    padding: 10px 0;
+}
+
+.textarea-div img{
+    position: relative;
+    bottom: 120px;
+    filter: invert(1) brightness(.4);
+    margin-right: 10px;
+    margin-left: 10px
+}
+
+.textarea-div textarea{
+    height: 150px;
+    width: 90%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    resize: none;
+    font-size: 20px;
+}
+
+#contact button{
+    width: 400px;
+    height: 50px;
+    margin: 15px auto;
+    background-color: rgba(1, 146, 81, 0.818);
+    border: none;
+    color: white;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+#contact button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: rgb(0, 153, 84);
+    border: 2px solid rgb(0, 153, 84)
+}
+
+.message-sent{
+    margin: 15px auto 0 auto;
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+.message-sent h3{
+    color: rgb(54, 54, 255);
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+}
+
+.message-sent p{
+    color: rgb(54, 54, 255);
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+}
+
+.message-sent-toggle{
+    max-height: 300px;
+}
+
+.correct-input{
+    border: 2px solid rgb(0, 153, 84);
+    background-color: rgb(83, 255, 178);
+}
+
+.incorrect-input{
+    border: 2px solid rgb(221, 27, 27);
+    background-color: rgb(255, 159, 159);
 }
 
 #testimonies{

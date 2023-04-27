@@ -28,23 +28,22 @@
                                         <div class="sub-menu">
                                             <ul class="sub-menu-ul">
                                                 <li class="drop-menu-item">
-                                                    <a class="sub-anchor" href="#">Chiropractic</a>
+                                                    <a class="sub-anchor" href="./services.html">Chiropractic</a>
                                                 </li>
                                                 <li class="drop-menu-item">
-                                                    <a class="sub-anchor" href="#">Injuries</a>
+                                                    <a class="sub-anchor" href="./services.html">Injuries</a>
                                                 </li>
                                                 <li class="drop-menu-item">
-                                                    <a class="sub-anchor" href="#">Extremities</a>
+                                                    <a class="sub-anchor" href="./services.html">Extremities</a>
                                                 </li>
                                                 <li class="drop-menu-item">
-                                                    <a class="sub-anchor" href="#">Family Chiropractic</a>
-                                                </li>
-                                                <li><a href="#">Massage Therapy</a></li>
-                                                <li class="drop-menu-item">
-                                                    <a class="sub-anchor" href="#">Imaging</a>
+                                                    <a class="sub-anchor" href="./services.html">Family Chiropractic</a>
                                                 </li>
                                                 <li class="drop-menu-item">
-                                                    <a class="sub-anchor" href="#">DOT Exams</a>
+                                                    <a class="sub-anchor" href="./services.html">Imaging</a>
+                                                </li>
+                                                <li class="drop-menu-item">
+                                                    <a class="sub-anchor" href="./services.html">DOT Exams</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -72,33 +71,115 @@
 
     <main>
         <section id="contact">
-            <h2>Contact Us</h2>
+            <h2>Get In Touch</h2>
+            <h5>Schedule An Appointment</h5>
             <form>
-                <label for="fname">First Name:</label>
-                <input type="text" id="fname" name="fname" required>
-                <label for="lname">Last Name:</label>
-                <input type="text" id="lname" name="lname" required>
+                <div class="input-cont">
+                    <div class="input-div" id="fname-div">
+                        <label for="fname"><img src="../images/head-silhouette.png"/></label>
+                        <input type="text" id="fname" name="fname" placeholder="First Name" required> 
+                    </div>
+                    <div class="input-div" id="lname-div">
+                        <label for="lname"><img src="../images/head-silhouette.png"/></label>
+                        <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+                    </div>
+                </div>
+                
+                <div class="input-cont">
+                    <div class="input-div" id="email-div">
+                        <label for="email"><img src="../images/email.png"/></label>
+                        <input type="email" id="email" name="email"placeholder="Your Email" required>
+                    </div>
+                    
+                    <div class="input-div" id="phone-div">
+                        <label for="phone"><img src="../images/phone.png"/></label>
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                    </div> 
+                </div>
+                
+                <div class="textarea-div" id="help-div">
+                    <label for="help"><img src="../images/chat-bubble.png"/></label>
+                    <textarea id="help" name="help" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+
+                <div class="message-sent" >
+                    <h3>Your message has been sent!</h3>
+                    <p>Will get back to you as soon as possible.</p>
+                </div>
+                
         
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
-        
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
-        
-                <label for="help">How Can We Help?</label>
-                <textarea id="help" name="help" rows="4" required></textarea>
-        
-                <button type="submit">Submit</button>
+                <button id="submit-button">Submit</button>
             </form>
         </section>
         
 
+        <div class="googlemap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.201745485798!2d-86.77732332566335!3d36.16164500343683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8864665bbb1812e7%3A0xec290c69a73825cf!2s123%20Broadway%2C%20Nashville%2C%20TN%2037201!5e0!3m2!1sen!2sus!4v1682014361435!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="location-box">
+                <h2>Find us here</h2>
+                <h5>Address</h5>
+                    <p>123, Broadway</p>
+                    <p>Nashville TN, 37201, United States</p>
+                <h5>Contact Information</h5>
+                    <h6>Phone: (615) 555-5555</h6>
+                    <h6>Email: Zfarmer20@gmail.com</h6>
+            </div>
+        </div>
+
+        <div class="op-hours">
+            <h2>Hours Of Operation</h2>
+            <div class="op-hours-div">
+                <div>
+                    <h4>Monday</h4>
+                    <p>8:00 am - 6:00 pm</p>
+                </div>
+                <div>
+                    <h4>Tuesday</h4>
+                    <p>8:00 am - 6:00 pm</p>
+                </div>
+                <div>
+                    <h4>Wednesday</h4>
+                    <p>8:00 am - 6:00 pm</p>
+                </div>
+                <div>
+                    <h4>Thursday</h4>
+                    <p>8:00 am - 6:00 pm</p>
+                </div>
+                <div>
+                    <h4>Friday</h4>
+                    <p>8:00 am - 6:00 pm</p>
+                </div>
+                <div>
+                    <h4>Saturday</h4>
+                    <p>Closed</p>
+                </div>
+                <div>
+                    <h4>Sunday</h4>
+                    <p>Closed</p>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <footer>
-
+        <div>
+            <h3>CRAFTED WITH <span><img src="../images/299063_heart_icon.png"></span> BY ICMACHINE</h3>
+            <h5>WEB DEVELOPERS</h5>
+        </div>
+            <p>© ICMACHINE. ALL RIGHTS RESERVED.</p>
     </footer>
 
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("kgwcyFNge_kmEgPiq");
+        })();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="../js/index.js"></script>
 </body>
 
 </html>
