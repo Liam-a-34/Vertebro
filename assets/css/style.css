@@ -132,7 +132,7 @@ main {
 .main-page-opening-image{
     width: 100%;
     height: 600px;
-    background-image: url("../images/emma-simpson-mNGaaLeWEp0-unsplash.jpg");
+    background-image: url("https://ik.imagekit.io/liamallen34/Vertebro_Images/images/emma-simpson-mNGaaLeWEp0-unsplash.jpg?updatedAt=1682972319966");
     background-size: cover;
     background-position: -10%;
     position: relative;
@@ -373,7 +373,7 @@ main {
 .life-back-image{
     width: 100%;
     height: 400px;
-    background-image: url("../images/babumon-pt-loHC7omTI0I-unsplash.jpg");
+    background-image: url("https://ik.imagekit.io/liamallen34/Vertebro_Images/images/babumon-pt-loHC7omTI0I-unsplash.jpg?updatedAt=1682972318703");
     background-size: cover;
     background-position: -10%;
     position: relative;
@@ -485,7 +485,7 @@ main {
 .service-image1{
     width: 1200px;
     height: 300px;
-    background-image: url("../images/back-pain-6949392.jpg");
+    background-image: url("https://ik.imagekit.io/liamallen34/Vertebro_Images/images/back-pain-6949392.jpg?updatedAt=1682972318639");
     background-size: cover;
     background-position: -10%;
 }
@@ -493,7 +493,7 @@ main {
 .service-image2{
     width: 590px;
     height: 300px;
-    background-image: url("../images/pexels-picas-joe-11352535.jpg");
+    background-image: url("https://ik.imagekit.io/liamallen34/Vertebro_Images/images/pexels-picas-joe-11352535.jpg?updatedAt=1682972321669");
     background-size: cover;
     margin: 20px 0;
 }
@@ -501,7 +501,7 @@ main {
 .service-image3{
     width: 590px;
     height: 300px;
-    background-image: url("../images/pexels-cottonbro-studio-3997989.jpg");
+    background-image: url("https://ik.imagekit.io/liamallen34/Vertebro_Images/images/pexels-cottonbro-studio-3997989.jpg?updatedAt=1682972321688");
     background-size: cover;
     background-position: -10%;
     margin: 20px 0;
@@ -510,7 +510,7 @@ main {
 .service-image4{
     width: 1200px;
     height: 300px;
-    background-image: url("../images/michael-jin-ipHlSSaC3vk-unsplash.jpg");
+    background-image: url("https://ik.imagekit.io/liamallen34/Vertebro_Images/images/michael-jin-ipHlSSaC3vk-unsplash.jpg?updatedAt=1682972320045");
     background-size: cover;
     background-position: -10%;
 }
@@ -766,7 +766,7 @@ main {
     height: 65px;
     background-color: white;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 15px;
     font-size: 30px;
     font-family: "Open Sans", sans-serif;
     color: rgb(0, 136, 75);
@@ -1423,10 +1423,137 @@ footer p {
 
 #testimonies{
     margin-top: 100px;
+    margin-bottom: 250px;
 }
 
-#contact {
-    margin-top: 100px;
+.testimonies-info{
+    width: 80vw;
+    padding: 40px;
+    background-color: white;
+    margin: 150px auto 0 auto;
+    line-height: 30px;
+}
+
+.testimonies-info h2{
+    margin: 20px 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: lighter;
+}
+
+#testimonies h3{
+    font-size: 35px;
+    text-align: center;
+    margin: 50px 0;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(0, 153, 84);
+    position: relative;
+}
+
+#testimonies h3::before{
+    content: "";
+    width: 250px;
+    border-bottom:2px solid rgb(0, 153, 84);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+.testimony-div{
+    width: 100%;
+    position: relative;
+    height: max-content;
+}
+
+.testimony{
+    width: 1200px;
+    margin: 0 auto 175px auto;
+    background-color: rgba(0, 153, 84, 0.554);
+    padding: 50px 50px 25px 50px;
+    text-align: center;
+    position: relative;
+}
+
+.testimony p{
+    font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(236, 236, 236);
+}
+
+.testimony h5{
+    color: rgb(236, 236, 236);
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    margin: 25px 0 0 25px
+}
+
+.tes-cone{
+    position: absolute;
+    bottom: -50px;
+    left: 100px;
+    border-right: 40px solid transparent;
+    border-top: 50px solid rgba(0, 153, 84, 0.554);
+    width: 30px;
+    transform: skew(50deg, 0deg);
+}
+
+.tes-cone-right{
+    position: absolute;
+    bottom: -50px;
+    right: 100px;
+    border-left: 40px solid transparent;
+    border-top: 50px solid rgba(0, 153, 84, 0.554);
+    width: 30px;
+    transform: skew(-50deg, 0deg);
+}
+
+.tes-img{
+    position: absolute;
+    bottom: -120px;
+    left: 120px;
+}
+
+.tes-img-right{
+    position: absolute;
+    bottom: -120px;
+    right: 120px;
+}
+
+#tes-img-1{
+    background-image: url("https://ik.imagekit.io/liamallen34/Vertebro_Images/images/rashad-d.jpg?updatedAt=1682972321654");
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: 50%;
+}
+
+#tes-img-2{
+    background-image: url("https://ik.imagekit.io/liamallen34/Vertebro_Images/images/jane-t.jpg?updatedAt=1682972319970");
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: 50%;
+}
+
+#tes-img-3{
+    background-image: url("https://ik.imagekit.io/liamallen34/Vertebro_Images/images/tom-w.jpg?updatedAt=1682972321558");
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.about-main .landing-contact-button a{
+    padding-top: 10px;
+}
+
+.services-main .landing-contact-button a{
+    padding-top: 10px;
 }
 
 .main{
