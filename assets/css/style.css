@@ -61,6 +61,10 @@ main {
     margin-top: 100px;
 }
 
+.mobile-header{
+    display: none;
+}
+
 .header-info {
     width: 80vw;
     margin: auto;
@@ -141,7 +145,6 @@ main {
 
 .opening-image-text-div{
     width: 1000px;
-    height: 260px;
     background-color: rgba(0, 0, 0, 0.671);
     position: absolute;
     top: 50%;
@@ -519,7 +522,8 @@ main {
     font-size: 40px;
     font-family: "Montserrat", sans-serif;
     color: white;
-    width: max-content;
+    width: 95%;
+    text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -583,7 +587,7 @@ main {
 
 @keyframes serviceBorder1{
     0%{content: "";
-        width: 110%;
+        width: 0%;
         height: 110%;
         position: absolute;
         top: 50%;
@@ -592,7 +596,7 @@ main {
         transform: translate(-50%, -50%);
         border: 2px solid white;}
     100%{content: "";
-        width: 1140px;
+        width: 100%;
         height: 240px;
         position: absolute;
         top: 50%;
@@ -639,6 +643,10 @@ main {
     height: 100%;
 }
 
+.map-hamburger{
+    visibility: hidden;
+}
+
 .location-page{
     height: 90vh;
     margin-top: 0;
@@ -674,6 +682,10 @@ main {
     left: 17%;
     color: white;
     border-bottom: 8px solid rgb(0, 122, 67);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
 }
 
 .location-box h2{
@@ -1063,8 +1075,6 @@ footer p {
     -o-transition: all 1s ease;
     transition: all 1s ease;
 }
-
-
 
 .large-service-bg{
     width: 100%;
@@ -1556,7 +1566,4 @@ footer p {
     padding-top: 10px;
 }
 
-.main{
-    margin-top: 100px;
-}
 

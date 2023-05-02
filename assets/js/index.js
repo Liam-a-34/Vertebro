@@ -4,6 +4,14 @@ $(function() {
     $serviceText.toggleClass("service-extend").delay(250).toggleClass("service-padding").end()
     .delay(250).toggleClass("service-shadow");
     });
+
+    $(".hamburger").on("click", function() {
+      $(".mobile-header-dropdown").toggleClass("mobile-drop-height")
+    })
+
+    $(".map-hamburger").click(function() {
+      $(".location-box").toggleClass("location-box-position")
+    })
     
     $("#submit-button").click(function(e) {
     e.preventDefault();
