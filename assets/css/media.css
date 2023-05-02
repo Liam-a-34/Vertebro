@@ -374,6 +374,14 @@ header h2 a{
         width: 100%;
     }
 
+    .about-header-text h3{
+        margin-top: 0;
+    }
+
+    .about-img-card{
+        margin-right: 0;
+    }
+
     .life-back-image h3{
         width: 100%;
         text-align: center;
@@ -398,10 +406,15 @@ header h2 a{
         visibility: visible;
         height: 40px;
         width: 40px;
-        filter: invert(1) brightness(.5);
+        filter: invert(1) brightness(.3);
         position: absolute;
         right: 50px;
         top: 25px;
+        z-index: 20;
+    }
+
+    .map-hamburger:hover{
+        cursor: pointer;
     }
 
     .location-box{
@@ -460,6 +473,395 @@ header h2 a{
 
     .large-service-shadow-div p{
         font-size: 15px;
+    }
+
+    .about-header-div p{
+        font-size: 15px;
+    }
+
+    .about-img-card img{
+        height: 300px;
+        width: 200px;
+    }
+
+    .about-img-card p{
+        width: 200px
+    }
+
+    .about-header-div p{
+        margin-top: 5px;
+    }
+
+    .service-images-header{
+        font-size: 30px;
+    }
+
+    #contact{
+        width: 100%;
+    }
+
+    #contact form{
+        width: 100%;
+    }
+
+    .input-cont{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .input-div{
+        width: 90%;
+        margin: 10px auto
+    }
+
+    .textarea-div{
+        width: 90%;
+        margin: 10px auto;
+        height: auto
+    }
+
+    .testimonies-info{
+        width: 90%;
+    }
+
+    .testimonies-info h2{
+        font-size: 15px;
+    }
+
+    #testimonies h3{
+        font-size: 30px;
+    }
+
+    .testimony p{
+        font-size: 18px;
+    }
+
+    .testimony h5{
+        font-size: 18px;
+        margin-left: 0;
+    }
+    
+
+}
+
+@media screen and (max-width: 600px){
+
+    .mobile-header-info a{
+        font-size: 40px;
+    }
+
+    .main-page-opening-image{
+        height: 300px
+    }
+
+    .opening-image-text-div{
+        width: 95%;
+    }
+
+    .opening-image-text-div h2{
+        font-size: 20px;
+        max-width: 70%;
+    }
+
+    .opening-image-text-div p{
+        font-size: 12px;
+        border-top: 1px solid white;
+        margin-top: 9px;
+    }
+
+    .about-header-cont{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-header-text{
+        width: 90%;
+        margin-top: 25px;
+    }
+
+    .about-header-text h3{
+        text-align: center;
+    }
+
+    .questions1 h5{
+        font-size: 25px;
+    }
+
+    .questions1 p{
+        font-size: 13px;
+    }
+
+    .questions2 h5{
+        font-size: 25px;
+    }
+
+    .questions2 p{
+        font-size: 13px;
+    }
+
+    .life-back-image{
+        height: 250px;
+    }
+
+    .life-back-image h3{
+        font-size: 25px;
+    }
+
+    .life-back-image p{
+        font-size: 12px;
+    }
+
+    .life-back-image a{
+        top: 70%;
+        height: 35px;
+        width: 180px
+    }
+
+    .life-back-image img{
+        height: 30px;
+        width: 30px;
+    }
+
+    .service-title{
+        font-size: 32px;
+    }
+
+    .service-prompt{
+        font-size: 15px;
+    }
+
+    .location-box{
+        width: 100%;
+        max-width: 250px;
+        padding-left: 10px
+    }
+
+    .location-box h2{
+        margin: 35px 0 40px 5px
+    }
+
+    .location-box h5{
+        margin: 25px 0 0 10px
+    }
+
+    .location-box p{
+        margin-left: 10px
+    }
+
+    .location-box h6{
+        margin-left: 10px;
+    }
+
+
+    .op-hours h2{
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    footer img{
+        height: 20px;
+        width: 20px;
+    }
+
+    footer h3{
+        font-size: 15px;
+    }
+
+    .large-service-bg{
+       height: 300px
+    }
+
+    .landing-contact-button a{
+        width: 250px
+    }
+
+    .textarea-div textarea{
+        width: 85%;
+    }
+
+    #contact button{
+        width: 200px;
+        height: 40px;
+        margin: 5px auto
+    }
+
+    .testimonies-info h2{
+        line-height: 20px;
+    }
+
+    #testimonies h3{
+        font-size: 25px;
+    }
+
+    #testimonies h3::before{
+        width: 200px
+    }
+
+    .testimony{
+        padding: 25px 25px 15px 25px
+    }
+
+}
+
+@media  screen and (max-width: 400px) {
+    
+
+    .main-page-opening-image{
+        height: 200px
+    }
+
+    .mobile-header-info a{
+        left: 15px;
+    }
+
+    .benefits-card{
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+    }
+
+    .benefits-card h6{
+        font-size: 20px;
+    }
+
+    .benefits-card p{
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+    .service-image1{
+        height: 250px
+    }
+
+    .service-image2{
+        height: 250px
+    }
+
+    .service-image3{
+        height: 250px
+    }
+
+    .service-image4{
+        height: 250px
+    }
+
+    .service-image1:hover .service-title::before, 
+    .service-image4:hover .service-title::before{
+    animation: serviceBorder1 .3s;
+    content: "";
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    }
+
+    .service-image2:hover .service-title::before,
+    .service-image3:hover .service-title::before{
+    animation: serviceBorder1 .3s;
+    content: "";
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    }
+
+    @keyframes serviceBorder1{
+        0%{content: "";
+            width: 0%;
+            height: 110%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            border: 2px solid white;}
+        100%{content: "";
+            width: 100%;
+            height: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            border: 2px solid white;}
+    }
+
+    .service-prompt{
+        width: 80%;
+        text-align: center;
+    }
+
+    .about-header-div {
+        width: 100%;
+        padding: 20px
+    }
+
+    .large-service-bg{
+        height: 250px
+    }
+
+    .large-service-shadow-div h2{
+        top: 30px;
+        max-width: 80%;
+        font-size: 30px;
+    }
+
+    .large-service-shadow-div p{
+        max-width: 80%;
+        text-align: center;
+    }
+
+    .large-service-text h3{
+        font-size: 20px;
+        margin-top: 25px
+    }
+
+    .large-service-text p{
+        font-size: 10px;
+        padding-bottom: 30px
+    }
+
+    #testimonies h3{
+        width: 90%;
+        margin: 35px auto;
+    }
+
+    .about-main .landing-contact-button a{
+        padding-top: 15px;
+    }
+    
+    .services-main .landing-contact-button a{
+        padding-top: 15px;
+    }
+
+    .tes-main .landing-contact-button a{
+        padding-top: 15px;
+    }
+
+    .input-div input{
+        width: 80%;
+        font-size: 17px;
+    }
+
+    .textarea-div textarea{
+        width: 80%;
+        font-size: 15px;
+    }
+
+    .map-hamburger{
+        top: 5px;
+        right: 30px;
     }
 
 }
