@@ -43,7 +43,7 @@ $(function() {
       $messageSent.toggleClass("message-sent-toggle").delay(2000).queue(function() {
         $(this).toggleClass("message-sent-toggle");
 
-        emailjs.send('service_ozy0h2a', 'service_ozy0h2a', templateParams)
+        emailjs.send('service_ozy0h2a', 'template_ri8b6fk', templateParams)
             .then(function(response) {
                 console.log('SUCCESS!', response.status, response.text);
             }, function(error) {
